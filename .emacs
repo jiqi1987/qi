@@ -19,3 +19,8 @@
 
 ;;Navigating Windows
 (windmove-default-keybindings)
+
+;;Suppressing C++ Namespace Indentation
+(c-set-offset 'innamespace 0)
+
+(add-hook 'before-save-hook 'whitespace-cleanup)
